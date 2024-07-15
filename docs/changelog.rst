@@ -47,6 +47,10 @@ Bug fixes
 - Improve the error message when the library database cannot be opened (for
   example due to permissions or an unwritable path), and fix the ``cannot not``
   typo in the generic database open failure message. :bug:`1676`
+- :doc:`plugins/bpd`: Report song paths with ``/`` separators on every platform,
+  so that the paths clients receive can be used to address songs on Windows too.
+- :ref:`import-cmd`: Detect the format of extension-less files on Windows, where
+  the ``ffprobe`` output was left unparsed because of its line endings.
 
 ..
     For plugin developers
